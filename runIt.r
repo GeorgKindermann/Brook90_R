@@ -1,6 +1,10 @@
-projectpath <- "."
+source("brook90Functions.r")
+source("brook90Variables.r")
 
-source("brook90.r")
+dataPath <- "./Input_data"
+source("brook90ReadData.r")
+
+source("brook90Run.r")
 
 ## ----chunkplot, results='hide'-------------------------------------------
 maxSF   <- max(c(timeseries_flow[1:NDAYS], timeseries_mesfld,timeseries_evp), na.rm = T)
